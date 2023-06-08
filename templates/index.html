@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligence artificielle et dons </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4b4a4a;
+            text-align: center;
+        }
+    
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Un modèle prédictif pour identifier les maladies rapidement</h1>
+    <form method="post" action="/">
+        <label for="variable1">Douleur Spontanée:</label>      
+        <select id="num1" name="num1" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non" id="option1">non</option>
+            <option value="récente" id="option2">récente</option>
+            <option value="intense">intense</option>
+            <option value="pulsatile">pulsatile</option>
+            <option value="irradiée">irradiée</option>
+            <option value="prolongée">prolongée</option>
+            <option value="oui">oui</option>
+            <option value="continue">continue</option>
+            <option value="occasionnelle">occasionnelle</option>
+            <option value="irradiante">irradiante</option>
+        </select>
+        <br>
+        <label for="variable2">Douleur Provoquée:</label>
+        <select id="num2" name="num2" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="froid">froid</option>
+            <option value="sucre">sucre</option>
+            <option value="chaud">chaud</option>
+            <option value="position allongée">position allongée</option>
+            <option value="effort physique">effort physique</option>
+            <option value="au contact">au contact</option>
+            <option value="pression">pression</option>
+            <option value="non">non</option>
+        </select>
+        <br>
+        <label for="variable3">Mobilité:</label>
+        <select id="num3" name="num3" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non">non</option>
+            <option value="1">1</option>
+            <option value="1+">1+</option>
+            <option value="oui">oui</option>
+        </select>
+        <br>
+        <label for="variable4">Vitalité:</label>
+        <select id="num4" name="num4" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="dent vivante">dent vivante</option>
+            <option value="dent morte">dent morte</option>
+        </select>
+        <br>
+
+        <label for="variable5">Palpation Apicale:</label>
+        <select id="num5" name="num5" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non">non</option>
+            <option value="douleur avec comblement">douleur avec comblement </option>
+            <option value="douleur si pression">douleur si pression </option>
+            <option value="oui">oui</option>
+        </select>
+        <br>
+
+        <label for="variable6">Fievre:</label>
+        <select id="num6" name="num6" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non">non </option>
+            <option value="oui">oui </option>
+            <option value="oui , locale "> oui , locale </option>
+        </select>
+        <br>
+
+        <label for="variable7">Asthenie:</label>
+        <select id="num7" name="num7" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non">non</option>
+            <option value="oui">oui</option>
+        </select>
+        <br>
+
+        <label for="variable8">Odeur Fétide:</label>
+        <select id="num8" name="num8" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non">non </option>
+          <!--  <option value="odeur fétide">odeur fétide </option>   -->
+            <option value="oui">oui</option>
+            <option value="oui avec mauvais gout">oui avec mauvais gout</option>
+        </select>
+        <br>
+
+        <label for="variable9">Médication ATG:</label>
+        <select id="num9" name="num9" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="efficace">efficace</option>
+            <option value="efficace , si stade avancée non">efficace , si stade avancée non</option>
+            <option value="non efficace">non efficace</option>
+        </select>
+
+        <br>
+
+        <label for="variable10">Soulager:</label>
+        <select id="num10" name="num10" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="eviter la cause">eviter la cause</option>
+            <option value="froid"> froid</option>
+            <option value="rien">rien</option>
+            <option value="sans contact">sans contact</option>
+            <option value="brossage">brossage</option>
+        </select>
+
+        <br>
+
+        <label for="variable11">Observations Exobuccales ( remarque generale ):</label>
+        <select id="num11" name="num11" required>
+            <option value="">Sélectionnez une option</option>
+            <option value="non">non</option>
+            <option value="sensation de dent longue">sensation de dent longue</option>
+            <option value="asymétrie faciale">asymétrie faciale</option>
+            <option value="parfois orifice">parfois orifice</option>
+            <option value="saignement au brossage">saignement au brossage</option>
+            <option value="trauma qui affecte la région">trauma qui affecte la région</option>
+            <option value="dent en main">dent en main</option>
+            <option value="limitation de l'ouverture buccale + capuchon muqueux postérieur mandibulaire">limitation de l'ouverture buccale + capuchon muqueux postérieur mandibulaire</option>
+        </select>   
+
+        <br>
+        <button type="submit">envoyer</button>
+    </form>
+</body>
+</html>
